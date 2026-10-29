@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
   <title id="title">AlignLedger</title>
-  <desc id="desc">Auditable human feedback infrastructure for model training.</desc>
+  <desc id="desc">Human feedback and data governance for RSI research.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#14354f"/><stop offset="1" stop-color="#315f86"/></linearGradient>
     <linearGradient id="paper" x1="0" x2="1"><stop stop-color="#fffdfa"/><stop offset="1" stop-color="#f3eee5"/></linearGradient>
@@ -10,7 +10,7 @@
   <g transform="translate(70 76)">
     <rect width="310" height="30" rx="15" fill="#e9b65e"/><text x="155" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="800" letter-spacing="1" fill="#173e5f">HUMAN FEEDBACK INFRASTRUCTURE</text>
     <text y="102" font-family="Arial,sans-serif" font-size="58" font-weight="900" fill="white">AlignLedger</text>
-    <text y="153" font-family="Arial,sans-serif" font-size="24" fill="#dce9f2">Auditable annotation and review for model training</text>
+    <text y="153" font-family="Arial,sans-serif" font-size="24" fill="#dce9f2">Human feedback for RSI research</text>
     <text y="198" font-family="Arial,sans-serif" font-size="17" fill="#bcd0df">Auto-save · conflict control · provenance · quality ranking · frozen export</text>
     <g transform="translate(0 245)">
       <rect width="145" height="45" rx="11" fill="#fffdfa"/><text x="72.5" y="29" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="800" fill="#234d6f">RUN THE DEMO</text>

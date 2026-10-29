@@ -5,12 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "alignledger"
 version = "0.1.0"
-description = "An auditable human-feedback annotation and quality platform for model alignment."
+description = "Human-feedback review and frozen data snapshots for RSI research and model development."
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}
 authors = [{name = "znxzsy"}]
-keywords = ["annotation", "human-feedback", "model-alignment", "rlhf", "quality-control"]
+keywords = ["annotation", "human-feedback", "model-alignment", "rlhf", "quality-control", "rsi", "data-provenance"]
 classifiers = [
   "Programming Language :: Python :: 3",
   "License :: OSI Approved :: MIT License",

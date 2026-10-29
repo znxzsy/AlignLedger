@@ -9,9 +9,27 @@
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-7a639d"></a>
 </div>
 
-AlignLedger is a small annotation and quality-control system for RLHF, SFT, DPO/KTO, multimodal evaluation, and other human-feedback workflows. It keeps model output, human corrections, second-pass review, reviewer identity, and final export decisions in one auditable record.
+**AlignLedger is the human-feedback and data-governance layer for RSI research and iterative model development.** It turns model outputs, human corrections and second-pass decisions into traceable records and frozen exports, supporting downstream SFT, RLHF, DPO/KTO preparation and multimodal evaluation.
 
 The project uses the Python standard library and SQLite. There is no frontend build step. A local demo starts with one command and creates synthetic records that cover completed, partial, corrected, and unresolved cases.
+
+## Role in the RSI workflow
+
+Here, RSI means recursive self-improvement: evidence from one iteration informs the next. AlignLedger prepares reviewable feedback and versioned data snapshots. [VeriInk](https://github.com/znxzsy/VeriInk) supplies complementary synthetic practice; trainers and independent evaluators remain external.
+
+<p align="center"><img src="assets/rsi_workflow.svg" alt="Conceptual RSI workflow and public repository boundaries" width="100%" /></p>
+
+| Data responsibility | What this repository provides |
+| --- | --- |
+| Review model output | Per-record judgments, corrections and unknown states |
+| Resolve disagreement | Separate second-pass decisions and final labels |
+| Preserve accountability | Actor attribution, revisions and idempotent writes |
+| Freeze the next dataset candidate | Snapshot files, manifest, SHA256 and completion marker |
+| Connect feedback to another iteration | Documented handoff; adapter and split policy remain external |
+
+Frozen exports are dataset candidates, not automatic training approval. Human labels require an appropriate review protocol; model-generated labels are not human ground truth. DPO/KTO candidate files still require downstream validation and format adaptation.
+
+[RSI data workflow](docs/RSI_WORKFLOW.md) · [中文流程](docs/RSI_WORKFLOW_ZH.md) · [Illustrative round record](examples/rsi_round.example.json)
 
 ## Why this exists
 
